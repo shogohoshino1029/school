@@ -1,0 +1,57 @@
+.header {
+  background-image: url(../../../../code/images/top-photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  letter-spacing: 0.4em;
+  @include underSp {
+    background-image: url(/code/images/top-photo-sp.jpg);
+  }
+  h1 {
+    margin: 0;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1em;
+    background-color: rgba($color: #d4145a, $alpha: 0.9);
+    @include underSp {
+      .sp {
+        display: block;
+      }
+    }
+    a {
+      color: #fff;
+    }
+  }
+  h2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-left: 8%;
+    color: #d4145a;
+    font-size: 2em;
+    line-height: 1.3em;
+    @include underSp {
+      font-size: 1.4em;
+    }
+  }
+  .sub-title {
+    padding-left: 8%;
+    font-size: 2em;
+    line-height: 1.3em;
+    margin-bottom: 60px;
+    @include underSp {
+      font-size: 1.1em;
+      .sp {
+        display: block;
+      }
+    }
+    span {
+      color: #d4145a;
+    }
+  }
+  .sub-text {
+    padding-left: 8%;
+    padding-bottom: 60px;
+    line-height: 1.5em;
+    color: #555;
+  }
+}

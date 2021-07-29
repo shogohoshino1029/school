@@ -1,0 +1,147 @@
+.present {
+  .present-top {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .pre {
+    position: relative;
+    z-index: 3;
+    display: table;
+    width: 100%;
+    height: 580px;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+  }
+  .pre01 {
+    background-image: url(/code/images/bg_sec01.jpeg);
+  }
+  .pre02 {
+    background-image: url(/code/images/bg_sec02.jpeg);
+  }
+  .pre03 {
+    background-image: url(/code/images/bg_sec03.jpeg);
+  }
+  .pre04 {
+    background-image: url(/code/images/bg_sec04.jpeg);
+  }
+  .pre05 {
+    background-image: url(/code/images/bg_sec05.jpeg);
+  }
+  .pre-inside {
+    display: table-cell;
+    height: 100%;
+    padding: 0 5%;
+    background: rgba(0, 0, 0, 0.4);
+    vertical-align: middle;
+  }
+  .pre-inbox {
+    width: 50%;
+    min-width: 586px;
+  }
+  .pre-title {
+    font-size: 1.4em;
+  }
+  .pre-copy {
+    margin-top: 1.5em;
+    padding: 1.2em 0;
+    border: solid #fff;
+    border-width: 1px 0;
+    font-size: 1.2em;
+  }
+  .pre-text {
+    margin-top: 1.5em;
+    line-height: 1.857;
+  }
+  .tel-num {
+    font-style: normal;
+  }
+  .ind-mns {
+    display: inline-block;
+    text-indent: -0.5em;
+  }
+  .pre-btn {
+    margin-top: 2em;
+    width: 300px;
+    a {
+      display: block;
+      border: solid 1px #fff;
+      text-align: center;
+      font-size: 0.95em;
+      transition: ease-out 0.3s;
+      padding: 5px 0;
+      &:hover {
+        background: #fff;
+        color: #d4145a;
+      }
+    }
+  }
+  @include underSp {
+    .present-top {
+      margin-left: 8%;
+      margin-right: 8%;
+    }
+    .pre01,
+    .pre02,
+    .pre03,
+    .pre04,
+    .pre05 {
+      background-image: none;
+    }
+    .pre {
+      display: contents;
+      width: 100%;
+      padding-bottom: 3em;
+      background: #fff;
+      color: #000;
+      a {
+        color: #1e90ff;
+      }
+    }
+    .pre-inside {
+      background: #fff;
+    }
+    .pre-img {
+      width: 100%;
+      text-align: center;
+    }
+    .pre-inside {
+      width: 45%;
+      min-width: 260px;
+    }
+    .pre-inbox {
+      margin: 2em auto 2em;
+      width: 100%;
+      min-width: 100px;
+    }
+    .pre-btn {
+      margin-top: 2em;
+      width: 100%;
+      a {
+        display: block;
+        border: solid 1px #000;
+        text-align: center;
+        color: #000;
+      }
+    }
+    .pre-copy {
+      display: table;
+      width: 100%;
+      height: 4em;
+      margin-top: 1.5em;
+      border: solid #000;
+      border-width: 1px 0;
+      line-height: 1.6;
+      font-size: 1.1em;
+      span {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+}

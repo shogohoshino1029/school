@@ -1,0 +1,105 @@
+.history {
+  .history-top {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .history-box {
+    margin-bottom: 50px;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 10%,
+        #fff 100%
+      ),
+      url(../../../../code/images/history-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .history-wrap-text {
+    background-color: rgba($color: #d4145a, $alpha: 0.8);
+    color: #fff;
+    margin-right: 5%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 50%;
+    h3 {
+      padding-bottom: 20px;
+      letter-spacing: 0.3em;
+    }
+    p {
+      padding-bottom: 20px;
+    }
+  }
+  .history-wrap {
+    padding-top: 40px;
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+      .history-wrap-text {
+        margin-left: 5%;
+        margin-right: 0;
+      }
+    }
+  }
+  .history-wrap-img {
+    // min-width: 300px;
+    text-align: center;
+  }
+  .history-table {
+    table {
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+      .table-top {
+        td {
+          border-top: 2px solid #d4145a;
+        }
+      }
+      .table-bottom {
+        td {
+          border-bottom: 2px solid #d4145a;
+        }
+      }
+      td {
+        border-left: 2px solid #d4145a;
+        border-right: 2px solid #d4145a;
+        padding: 5px 10px;
+      }
+    }
+  }
+  @include underSp {
+    .history-top {
+      margin-left: 8%;
+      margin-right: 8%;
+    }
+    .history-wrap {
+      margin: 0 8%;
+      padding: 30px 0;
+      display: block;
+      &:nth-child(2) {
+        .history-wrap-text {
+          margin-left: 0;
+        }
+      }
+      img {
+        min-width: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    }
+    .history-wrap-text {
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    .history-table {
+      margin: 0 3%;
+    }
+  }
+}

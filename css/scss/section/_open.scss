@@ -1,0 +1,50 @@
+.open {
+  .since {
+    text-align: center;
+    margin-bottom: 50px;
+    @include underSp {
+      margin: 0 8%;
+      padding-bottom: 50px;
+    }
+  }
+  .founder {
+    display: flex;
+    margin-left: 8%;
+    margin-right: 8%;
+    @include underSp {
+      display: block;
+    }
+  }
+  .founder-left {
+    width: 130%;
+    h4 {
+      font-size: 2em;
+      color: #d4145a;
+      font-weight: normal;
+      letter-spacing: 0.4em;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: center;
+    }
+    img {
+      min-width: 250px;
+    }
+    @include underSp {
+      width: 100%;
+      h4 {
+        text-align: center;
+        font-size: 1.5em;
+      }
+      p {
+        padding-bottom: 15px;
+      }
+    }
+  }
+  .founder-right {
+    margin-left: 5%;
+    p {
+      margin-bottom: 25px;
+    }
+  }
+}

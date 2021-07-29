@@ -1,0 +1,15 @@
+.donation {
+  text-align: center;
+  .donation-top {
+    margin-bottom: 50px;
+  }
+  .donation-next {
+    color: #d4145a;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  @include underSp {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
